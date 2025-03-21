@@ -4,7 +4,11 @@
     height: 3rem;
 }
 
-.nav-up a,span{
+.nav-up a{
+    color: #FFFFFF99;
+}
+
+.nav-up .wrap-nav{
     color: #FFFFFF99;
 }
 
@@ -16,6 +20,18 @@
     font-size: 1.3rem;
     text-transform: uppercase;
 }
+
+@media only screen and (max-width: 768px) {
+    #wrap{
+        background-color: #a23f25;
+        height: 5rem;
+    }
+
+    .nav-up{
+        gap: 1rem;
+    }
+}
+
 
 .navbar{
     color: #d4e0ef;
@@ -68,7 +84,7 @@
 
 #ftco-intro{
     background-color: #a23f25;
-    height: 25.5rem;
+    height: 28rem;
 }
 
 #ftco-intro .icon .fa-hand-holding-heart, .fa-truck, .fa-sack-dollar{
