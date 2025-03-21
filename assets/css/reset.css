@@ -15,7 +15,8 @@ a{
 
 ul, 
 ol,
-li{
+li,
+h2{
     list-style-type: none;
     text-transform: uppercase;
 }

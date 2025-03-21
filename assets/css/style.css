@@ -32,7 +32,6 @@
 .nav-area h2{
     font-size: 2rem;
     color: white;
-    text-transform: uppercase;
 }
 
 .nav_item{
@@ -51,7 +50,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    height: 75rem;
+    height: 70rem;
 }
 
 #hero-wrap .text h1{
@@ -65,4 +64,23 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #fff;
+}
+
+#ftco-intro{
+    background-color: #a23f25;
+    height: 25.5rem;
+}
+
+#ftco-intro .icon .fa-hand-holding-heart, .fa-truck, .fa-sack-dollar{
+    font-size: 8rem;
+}
+
+#ftco-intro .text h2{
+    font-size: 1.8rem;
+    color: white;
+}
+
+#ftco-intro .text p{
+    font-size: 1.6rem;
+    color: #FFFFFFCC;
 }
