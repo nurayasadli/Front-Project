@@ -14,8 +14,10 @@ a{
 }
 
 ul, 
-ol{
+ol,
+li{
     list-style-type: none;
+    text-transform: uppercase;
 }
 
 html{
