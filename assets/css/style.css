@@ -1,0 +1,18 @@
+#wrap{
+    background-color: #a23f25;
+    font-size: 1.2rem;
+    height: 3rem;
+}
+
+.nav-up a,span{
+    color: #FFFFFF99;
+}
+
+.nav-up i{
+    color: white;
+}
+
+.register a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
