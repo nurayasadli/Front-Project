@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <section id="wrap">
         <div class="container">
             <div class="row py-2 nav-up">
@@ -69,12 +70,12 @@
                         <li class="product-dropdown"><a href="products.html" class="nav_item">Products ▼</a>
                             <ul class="dropdown-content">
                                 <li><a href="products.html">Products</a></li>
-                                <li><a href="#">Single Product</a></li>
-                                <li><a href="#">Cart</a></li>
+                                <li><a href="blogs.html">Single Product</a></li>
+                                <li><a href="cart.html">Cart</a></li>
                                 <li><a href="#">Checkout</a></li>
                             </ul>
                         </li>
-                        <li><a href="blogs.html" class="nav_item">Blog</a></li>
+                        <li><a href="" class="nav_item">Blog</a></li>
                         <li><a href="" class="nav_item">Contact</a></li>
                         <li class="icon-dropdown-content"><a href="" class="nav_item"><i class="fa-solid fa-bag-shopping" style="font-size: 2rem; color: #a23f25;"></i></a>
                             <ul class="icon-content">
@@ -124,155 +125,193 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text align-items-center justify-content-center">
-                    <div class="col-md-9 text-center" style="margin-top: 22rem;">
+                    <div class="col-md-9 text-center" style="margin-top: 25rem;">
                         <p class="breadcrumbs" style="color: #ffffffb3; font-size: 1.6rem;">
                             <span>
                                 <a href="" style="color: #ffffffb3; margin-right: 1.5rem;">Home <i class="fa-solid fa-chevron-right"></i></a>
                             </span>
                             <span>
-                                Blogs <i class="fa-solid fa-chevron-right"></i>
+                                Cart <i class="fa-solid fa-chevron-right"></i>
                             </span>
                         </p>
-                        <h2 style="font-size: 6rem; color: white; text-transform: none;">Blogs</h2>
+                        <h2 style="font-size: 6rem; color: white; text-transform: none;">My Cart</h2>
                     </div>
                 </div>
             </div>
         </section>
     </header>
 
-        <section id="blog">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 text-center py-5">
-                        <span class="subheading fs-4"><i>Blog</i></span>
-                        <h2 class="blog-title" style="text-transform: none; font-size: 4rem; color: black; font-weight: normal;">Recent Blog</h2>
-                    </div>
+    <section id="cart-section" style="height: 140rem; padding-top: 8rem;">
+        <div class="container">
+            <div class="row my-5">
+                <div class="table-wrap">
+                    <table class="table">
+                        <thead class="table-danger cart-table-head">
+                            <tr>
+                                <th> &nbsp; </th>
+                                <th> &nbsp; </th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th> &nbsp; </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="alert" role="alert">
+                                <td>
+                                    <label class="chekbox-wrap chekbox-danger"><input type="checkbox" style="width: 1.7rem; height: 1.7rem;"></label>
+                                </td>
+                                <td>
+                                    <div class="cart-img" style="width: 7rem; height: 8rem;">
+                                        <img src="assets/img/prod-1.jpg.webp" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="email d-flex flex-column">
+                                        <span style="font-size: 2rem;">Jim Beam Kentucky Straight</span>
+                                        <span style="color: rgba(0, 0, 0, 0.3); font-size: 1.6rem;">Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$44.99</td>
+                                <td class="quantity">
+                                    <div class="input-group">
+                                        <input type="text" name="quantity" class="quantity form-control input-number" value="2" min="1" max="100">
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$89.98</td>
+                                <td style="cursor: pointer; color: #a23f25;"><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="alert" role="alert">
+                                <td>
+                                    <label class="chekbox-wrap chekbox-danger"><input type="checkbox" style="width: 1.7rem; height: 1.7rem;"></label>
+                                </td>
+                                <td>
+                                    <div class="cart-img" style="width: 7rem; height: 8rem;">
+                                        <img src="assets/img/prod-2.jpg.webp" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="email d-flex flex-column">
+                                        <span style="font-size: 2rem;">Jim Beam Kentucky Straight</span>
+                                        <span style="color: rgba(0, 0, 0, 0.3); font-size: 1.6rem;">Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$30.99</td>
+                                <td class="quantity">
+                                    <div class="input-group">
+                                        <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$30.99</td>
+                                <td style="cursor: pointer; color: #a23f25;"><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="alert" role="alert">
+                                <td>
+                                    <label class="chekbox-wrap chekbox-danger"><input type="checkbox" style="width: 1.7rem; height: 1.7rem;"></label>
+                                </td>
+                                <td>
+                                    <div class="cart-img" style="width: 7rem; height: 8rem;">
+                                        <img src="assets/img/prod-3.jpg.webp" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="email d-flex flex-column">
+                                        <span style="font-size: 2rem;">Jim Beam Kentucky Straight</span>
+                                        <span style="color: rgba(0, 0, 0, 0.3); font-size: 1.6rem;">Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$35.50</td>
+                                <td class="quantity">
+                                    <div class="input-group">
+                                        <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$35.50</td>
+                                <td style="cursor: pointer; color: #a23f25;"><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="alert" role="alert">
+                                <td>
+                                    <label class="chekbox-wrap chekbox-danger"><input type="checkbox" style="width: 1.7rem; height: 1.7rem;"></label>
+                                </td>
+                                <td>
+                                    <div class="cart-img" style="width: 7rem; height: 8rem;">
+                                        <img src="assets/img/prod-4.jpg.webp" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="email d-flex flex-column">
+                                        <span style="font-size: 2rem;">Jim Beam Kentucky Straight</span>
+                                        <span style="color: rgba(0, 0, 0, 0.3); font-size: 1.6rem;">Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$76.99</td>
+                                <td class="quantity">
+                                    <div class="input-group">
+                                        <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$76.99</td>
+                                <td style="cursor: pointer; color: #a23f25;"><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="alert" role="alert">
+                                <td>
+                                    <label class="chekbox-wrap chekbox-danger"><input type="checkbox" style="width: 1.7rem; height: 1.7rem;"></label>
+                                </td>
+                                <td>
+                                    <div class="cart-img" style="width: 7rem; height: 8rem;">
+                                        <img src="assets/img/prod-5.jpg.webp" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="email d-flex flex-column">
+                                        <span style="font-size: 2rem;">Jim Beam Kentucky Straight</span>
+                                        <span style="color: rgba(0, 0, 0, 0.3); font-size: 1.6rem;">Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$40.00</td>
+                                <td class="quantity">
+                                    <div class="input-group">
+                                        <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                    </div>
+                                </td>
+                                <td style="font-size: 1.6rem; color: #808080;">$40.00</td>
+                                <td style="cursor: pointer; color: #a23f25;"><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="row flex-wrap">
-                    <div class="col-md-6 d-flex">
-                        <div class="blog-img" style="width: 27rem; height: 33.4rem;">
-                            <img src="assets/img/image_1.jpg.webp" alt="" style="width: 27rem; height: 33.4rem;">
-                        </div>
-                        <div class="blog-desc px-4 d-flex flex-column py-5" style="width: 27rem; height: 33.4rem; background-color: #f5f4f0">
-                            <div class="blog-calendar my-3" style="color: #808080; font-size: 1.6rem;">
-                                <i class="fa-solid fa-calendar-days"></i> <span class="px-3">23 April 2020</span>
-                            </div>
-                            <div>
-                                <p class="blog-heading my-4" style="font-size: 2.2rem; color: black;"><i>The Recipe from a Winemaker’s Restaurent</i></p>
-                            </div>
-                            <div class="blog-text my-3" style="font-size: 1.6rem; color: #808080;">
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                            <a href="" class="btn-custom my-3" style="font-size: 1.6rem; color: #a23f25; font-weight: bold;"><i>Continue <span><i class="fa-solid fa-arrow-right-long"></i></span></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex">
-                        <div class="blog-img" style="width: 27rem; height: 33.4rem;">
-                            <img src="assets/img/image_2.jpg.webp" alt="" style="width: 27rem; height: 33.4rem;">
-                        </div>
-                        <div class="blog-desc px-4 d-flex flex-column py-5" style="width: 27rem; height: 33.4rem; background-color: #f5f4f0;">
-                            <div class="blog-calendar my-3" style="color: #808080; font-size: 1.6rem;">
-                                <i class="fa-solid fa-calendar-days"></i> <span class="px-3">23 April 2020</span>
-                            </div>
-                            <div>
-                                <p class="blog-heading my-4" style="font-size: 2.2rem; color: black;"><i>The Recipe from a Winemaker’s Restaurent</i></p>
-                            </div>
-                            <div class="blog-text my-3" style="font-size: 1.6rem; color: #808080;">
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                            <a href="" class="btn-custom my-3" style="font-size: 1.6rem; color: #a23f25; font-weight: bold;"><i>Continue <span><i class="fa-solid fa-arrow-right-long"></i></span></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex my-5">
-                        <div class="blog-img" style="width: 27rem; height: 33.4rem;">
-                            <img src="assets/img/image_3.jpg.webp" alt="" style="width: 27rem; height: 33.4rem;">
-                        </div>
-                        <div class="blog-desc px-4 d-flex flex-column py-5" style="width: 27rem; height: 33.4rem; background-color: #f5f4f0;">
-                            <div class="blog-calendar my-3" style="color: #808080; font-size: 1.6rem;">
-                                <i class="fa-solid fa-calendar-days"></i> <span class="px-3">23 April 2020</span>
-                            </div>
-                            <div>
-                                <p class="blog-heading my-4" style="font-size: 2.2rem; color: black;"><i>The Recipe from a Winemaker’s Restaurent</i></p>
-                            </div>
-                            <div class="blog-text my-3" style="font-size: 1.6rem; color: #808080;">
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                            <a href="" class="btn-custom my-3" style="font-size: 1.6rem; color: #a23f25; font-weight: bold;"><i>Continue <span><i class="fa-solid fa-arrow-right-long"></i></span></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex my-5">
-                        <div class="blog-img" style="width: 27rem; height: 33.4rem;">
-                            <img src="assets/img/image_4.jpg.webp" alt="" style="width: 27rem; height: 33.4rem;">
-                        </div>
-                        <div class="blog-desc px-4 d-flex flex-column py-5" style="width: 27rem; height: 33.4rem; background-color: #f5f4f0;">
-                            <div class="blog-calendar my-3" style="color: #808080; font-size: 1.6rem;">
-                                <i class="fa-solid fa-calendar-days"></i> <span class="px-3">23 April 2020</span>
-                            </div>
-                            <div>
-                                <p class="blog-heading my-4" style="font-size: 2.2rem; color: black;"><i>The Recipe from a Winemaker’s Restaurent</i></p>
-                            </div>
-                            <div class="blog-text my-3" style="font-size: 1.6rem; color: #808080;">
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                            <a href="" class="btn-custom my-3" style="font-size: 1.6rem; color: #a23f25; font-weight: bold;"><i>Continue <span><i class="fa-solid fa-arrow-right-long"></i></span></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex my-3">
-                        <div class="blog-img" style="width: 27rem; height: 33.4rem;">
-                            <img src="assets/img/image_5.jpg.webp" alt="" style="width: 27rem; height: 33.4rem;">
-                        </div>
-                        <div class="blog-desc px-4 d-flex flex-column py-5" style="width: 27rem; height: 33.4rem; background-color: #f5f4f0;">
-                            <div class="blog-calendar my-3" style="color: #808080; font-size: 1.6rem;">
-                                <i class="fa-solid fa-calendar-days"></i> <span class="px-3">23 April 2020</span>
-                            </div>
-                            <div>
-                                <p class="blog-heading my-4" style="font-size: 2.2rem; color: black;"><i>The Recipe from a Winemaker’s Restaurent</i></p>
-                            </div>
-                            <div class="blog-text my-3" style="font-size: 1.6rem; color: #808080;">
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                            <a href="" class="btn-custom my-3" style="font-size: 1.6rem; color: #a23f25; font-weight: bold;"><i>Continue <span><i class="fa-solid fa-arrow-right-long"></i></span></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex my-3">
-                        <div class="blog-img" style="width: 27rem; height: 33.4rem;">
-                            <img src="assets/img/image_6.jpg.webp" alt="" style="width: 27rem; height: 33.4rem;">
-                        </div>
-                        <div class="blog-desc px-4 d-flex flex-column py-5" style="width: 27rem; height: 33.4rem; background-color: #f5f4f0;">
-                            <div class="blog-calendar my-3" style="color: #808080; font-size: 1.6rem;">
-                                <i class="fa-solid fa-calendar-days"></i> <span class="px-3">23 April 2020</span>
-                            </div>
-                            <div>
-                                <p class="blog-heading my-4" style="font-size: 2.2rem; color: black;"><i>The Recipe from a Winemaker’s Restaurent</i></p>
-                            </div>
-                            <div class="blog-text my-3" style="font-size: 1.6rem; color: #808080;">
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                            <a href="" class="btn-custom my-3" style="font-size: 1.6rem; color: #a23f25; font-weight: bold;"><i>Continue <span><i class="fa-solid fa-arrow-right-long"></i></span></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-5">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <nav aria-label="Page navigation example">
-                                <ul class="d-flex justify-content-center product-payload">
-                                  <li class="page-item disabled">
-                                    <a class="page-link"><i class="fa-solid fa-chevron-left"></i></a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
-                                  </li>
-                                </ul>
-                              </nav>
-                        </div>
-                    </div>
             </div>
-        </section>
+            <div class="row justify-content-end my-5">
+                <div class="col-lg-5 col-md-6 cart-wrap">
+                    <div class="cart-total d-flex flex-column gap-3 px-5">
+                        <h3 class="py-3">Cart Totals</h3>
+                        <p class="d-flex">
+                            <span>Subtotal</span>
+                            <span>$20.60</span>
+                        </p>
+                        <p class="d-flex">
+                            <span>Delivery</span>
+                            <span>$0.00</span>
+                        </p>
+                        <p class="d-flex">
+                            <span>Discount</span>
+                            <span>$3.00</span>
+                        </p>
+                        <hr style="color: gray;">
+                        <p class="d-flex total-price">
+                            <span>Total</span>
+                            <span style="color: #000000; font-weight: bold;">$17.60</span>
+                        </p>
+                    </div>
+                    <p>
+                        <a href="checkout.html" class="btn btn-danger checkout-btn">Proceed to Checkout</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <section id="footer-section" style="background-color: #1a1a1a; height: 40rem;">
