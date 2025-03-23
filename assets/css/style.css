@@ -179,6 +179,7 @@
 
 #ftco-section{
     margin-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .drink_kind{
@@ -475,5 +476,28 @@ input[type="radio"] {
 
   .footer-end-area{
     padding-top: 3rem;
+  }
+
+  .product-payload li{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid #a23f25;
+    position: relative;
+  }
+
+  .product-payload li a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: #a23f25;
+  }
+
+  .product_text{
+    display: flex;
+    gap: 37rem;
+    margin-bottom: 2.5rem;
   }
 
