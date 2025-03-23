@@ -367,3 +367,45 @@ input[type="radio"] {
     padding-top: 3rem;
   }
 
+  #blog{
+    padding-top: 8rem;
+    padding-bottom: 8rem
+  }
+
+  .footer-area{
+    padding-top: 10rem;
+  }
+
+  .footer-social-icon li a{
+    height: 5rem;
+    width: 5rem;
+    display: block;
+    float: left;
+    background: #b7472a;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .footer-social-icon li a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255, 0.5);
+  }
+
+  .footer-list li a{
+    color: #FFFFFF80;
+    text-transform: none;
+    font-size: 1.6rem;
+  }
+
+  .footer-list li a i{
+    font-weight: bold;
+  }
+
+  .footer-end-area{
+    padding-top: 3rem;
+  }
+
