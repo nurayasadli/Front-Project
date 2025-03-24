@@ -69,13 +69,13 @@
                         <li class="product-dropdown"><a href="products.html" class="nav_item">Products ▼</a>
                             <ul class="dropdown-content">
                                 <li><a href="products.html">Products</a></li>
-                                <li><a href="blogs.html">Single Product</a></li>
-                                <li><a href="#">Cart</a></li>
-                                <li><a href="#">Checkout</a></li>
+                                <li><a href="singleproduct.html">Single Product</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
                             </ul>
                         </li>
-                        <li><a href="" class="nav_item">Blog</a></li>
-                        <li><a href="" class="nav_item">Contact</a></li>
+                        <li><a href="blogs.html" class="nav_item">Blog</a></li>
+                        <li><a href="contact.html" class="nav_item">Contact</a></li>
                         <li class="icon-dropdown-content"><a href="" class="nav_item"><i class="fa-solid fa-bag-shopping" style="font-size: 2rem; color: #a23f25;"></i></a>
                             <ul class="icon-content">
                                 <li><a href="">
@@ -111,7 +111,7 @@
                                         </div>
                                     </div>
                                 </a></li>
-                                <li><a href="" class="text-center fs-4 py-3" style="color: #a23f25;">View All</a></li>
+                                <li><a href="blogs.html" class="text-center fs-4 py-3" style="color: #a23f25;">View All</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -142,13 +142,29 @@
 
         <section id="ftco-section">
             <div class="container">
-                <div class="prod-heading row justify-content-center">
-                    <div class="product_text">
-                        <div class="text_first" style="font-size: 1.8rem; color: black;">Select Types of Products</div>
-                        <button></button>
-                    </div>
-                </div>
                 <div class="row">
+                        <div class="prod-heading">
+                            <div class="product_text">
+                                <div class="text_first" style="font-size: 1.8rem; color: black;">Select Types of Products</div>
+                                <div class="dropdown bootstrap-select show-tick">
+                                    <button type="button" class="btn dropdown-toggle bs-placeholder btn-light select-prod" data-toggle="dropdown" role="button" title="nothing selected" aria-placeholder="nothing selected">
+                                        <div class="filter-option">
+                                            <div class="filter-option-inner">
+                                                <div class="filter-option-inner-inner">Nothing Selected</div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <select class="select-picker">
+                                        <option value="">Rum</option>
+                                        <option value="">Whiskey</option>
+                                        <option value="">Brandy</option>
+                                        <option value="">Tequila</option>
+                                        <option value="">Vodka</option>
+                                        <option value="">Gin</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     <div class="col-md-9 d-flex">
                         <div class="row">
                             <div class="col-md-4">
@@ -531,6 +547,79 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-3 products-sidebar">
+                        <div class="sidebar-menu">
+                            <div class="categories">
+                                <h3 style="font-size: 2.2rem; color: #000000; margin-bottom: 3rem;">Product Types</h3>
+                                <li><a href="">Brandy <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                <li><a href="">Gin  <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                <li><a href="">Rum <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                <li><a href="">Tequila <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                <li><a href="">Vodka <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                <li><a href="">Whiskey <span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                            </div>
+                        </div>
+                        <div class="sidebar-menu d-flex flex-column gap-3 my-5">
+                            <h3 style="font-size: 2.2rem; margin-bottom: 3rem; color: black;">Recent Blog</h3>
+                            <div class="blog-21 d-flex gap-5">
+                                <div class="blog-recent-img">
+                                    <img src="assets/img/image_2.jpg.webp" alt="">
+                                </div>
+                                <div class="recent-desc">
+                                <h3 class="heading" style="color: black;">Even the all-powerful Pointing has no control about the blind texts</h3>
+                                <div class="blog-date d-flex gap-3 py-3 fs-5">
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-calendar-days"></i> Apr. 18, 2020</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-comment"></i> 19</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="blog-21 d-flex gap-5">
+                                <div class="blog-recent-img">
+                                    <img src="assets/img/image_1.jpg.webp" alt="">
+                                </div>
+                                <div class="recent-desc">
+                                <h3 class="heading" style="color: black;">Even the all-powerful Pointing has no control about the blind texts</h3>
+                                <div class="blog-date d-flex gap-3 py-3 fs-5">
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-calendar-days"></i> Apr. 18, 2020</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-comment"></i> 19</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="blog-21 d-flex gap-5">
+                                <div class="blog-recent-img">
+                                    <img src="assets/img/image_3.jpg.webp" alt="">
+                                </div>
+                                <div class="recent-desc">
+                                <h3 class="heading" style="color: black;">Even the all-powerful Pointing has no control about the blind texts</h3>
+                                <div class="blog-date d-flex gap-3 py-3 fs-5">
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-calendar-days"></i> Apr. 18, 2020</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                                    </div>
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-comment"></i> 19</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
                     <div class="row">
                         <div class="col-md-9 d-flex justify-content-center">
                             <nav aria-label="Page navigation example">
@@ -549,9 +638,6 @@
                                 </ul>
                               </nav>
                         </div>
-                    </div>
-                    <div class="col-md-3 d-flex">
-                        
                     </div>
                 </div>
             </div>
