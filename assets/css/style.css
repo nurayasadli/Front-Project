@@ -826,10 +826,6 @@ input[type="radio"] {
     padding: 0 3rem;
   }
 
-  .rayting p,span{
-    font-size: 1.6rem;
-  }
-
   .rayting p a{
     color: #a23f25;
   }
@@ -890,3 +886,91 @@ input[type="radio"] {
   .select-prod{
     width: 20rem;
   }
+
+  .sign-container {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+  .login-box {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    width: 40rem;
+    height: 36rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}
+
+input {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.forgot-password {
+    font-size: 1.2rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background: #a23f25;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+.signup-text {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.signup-text a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
