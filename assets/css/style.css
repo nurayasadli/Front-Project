@@ -1,7 +1,7 @@
 #wrap{
     background-color: #a23f25;
     font-size: 1.2rem;
-    height: 3rem;
+    padding: .5rem 0;
 }
 
 .nav-up a{
@@ -19,17 +19,6 @@
 .register a{
     font-size: 1.3rem;
     text-transform: uppercase;
-}
-
-@media only screen and (max-width: 768px) {
-    #wrap{
-        background-color: #a23f25;
-        height: 5rem;
-    }
-
-    .nav-up{
-        gap: 1rem;
-    }
 }
 
 
@@ -127,6 +116,10 @@
     color: white;
 }
 
+.menu-item{
+  display: none;
+}
+
 #hero-wrap{
     background-image: url(img/bg_2.jpg.webp);
     background-size: cover;
@@ -134,7 +127,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    height: 70rem;
+    padding: 10rem 0;
 }
 
 #hero-wrap .text h1{
@@ -152,7 +145,6 @@
 
 #ftco-intro{
     background-color: #a23f25;
-    height: 28rem;
 }
 
 #ftco-intro .icon .fa-hand-holding-heart, .fa-truck, .fa-sack-dollar{
@@ -170,7 +162,11 @@
 }
 
 #about{
-    margin-top: 8rem;
+    padding: 8rem 0;
+}
+
+.heading-section{
+  padding: 0 3rem;
 }
 
 .counter-box{
@@ -178,13 +174,11 @@
 }
 
 #ftco-section{
-    margin-top: 8rem;
-    padding-bottom: 8rem;
+  padding: 6rem 0;
 }
 
 .drink_kind{
     display: flex;
-    gap: 5rem;
 }
 
 .about-image img{
@@ -237,7 +231,7 @@
 }
 
 .prod-heading{
-    margin-bottom: 3rem;
+   padding: 3rem 0;
 }
 
 .product{
@@ -332,8 +326,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    height: 65rem;
     position: relative;
+    padding: 7rem 0;
   }
 
   #testimony-section .overlay1{
@@ -437,12 +431,11 @@ input[type="radio"] {
   }
 
   #blog{
-    padding-top: 8rem;
-    padding-bottom: 8rem
+    padding: 8rem 0;
   }
 
   .footer-area{
-    padding-top: 10rem;
+    padding: 10rem 0;
   }
 
   .footer-social-icon li a{
@@ -913,26 +906,26 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-h2 {
+.login-box h2 {
     margin-bottom: 2rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.login-box form {
+  display: flex;
+  flex-direction: column;
 }
 
-label {
-    text-align: left;
-    font-size: 1.4rem;
-    margin: .5rem 0;
+.login-box label {
+  text-align: left;
+  font-size: 1.4rem;
+  margin: .5rem 0;
 }
 
-input {
-    width: 100%;
-    padding: .8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
+.login-box input {
+  width: 100%;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
 }
 
 .forgot-password {
@@ -974,3 +967,191 @@ input {
     text-decoration: underline;
 }
 
+#contact{
+  padding: 9rem 0;
+  background-color: #f5f4f0;
+}
+
+.contact-icon{
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    background: #b7472a;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.contact-icon i{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: white
+}
+
+.contact-text{
+  font-size: 1.6rem;
+}
+
+.cntc-heading{
+  color: #000000;
+}
+
+.contactt{
+  width: 100%;
+  height: 50rem;
+  background-color: white;
+  padding: 2rem 3rem;
+}
+
+.contact-form .form-control{
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    height: 5.8rem !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background: transparent !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    font-size: 1.4rem;
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+
+.contact-form label{
+    color: #b7472a !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cont-btn{
+  width: 15rem;
+  height: 4rem;
+}
+
+.map{
+  margin-top: 6rem;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (max-width:1200px){
+  .container{
+      max-width: 950px;
+  }
+
+  .product .img{
+      width: 200px;
+  }
+}
+@media (max-width:768px){
+
+  .product .img{
+      width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+      max-width: 960px;
+      padding-right: 0;
+      padding-left: 0;
+  }
+  .hero-wrap .slider-text h1 {
+      font-size: 40px;
+      
+  }
+  
+  #online .no-gutters{
+      padding: 0 120px;
+  }
+
+
+  .nav li{
+      display: none;
+  }
+
+  .nav .bag{
+      display: block;
+      padding-left: 20px;
+  }
+
+  .menu{
+      display: block;
+  }
+
+  .sort{
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width:768px){
+
+  .navbar{
+      justify-content: space-evenly;
+      display: flex;
+  }
+
+  .navbar .nav_items .nav_item{
+    display: none;
+  }
+
+  .navbar .nav_items .nav_item-one{
+    color: #808080;
+    
+  }
+
+  .navbar-section{
+    background-color: #000000;
+  }
+
+  .menu-item{
+    text-align: center;
+    display: block;
+  }
+
+  .social_media{
+      width: 50%;
+  }
+  .register{
+      width: 50%;
+      justify-content: flex-end ;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+      background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+
+  .blogg{
+      margin-left: 20px;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px){
+  .hero-wrap .slider-text{
+      padding-left:200px;
+      justify-content: center;
+  }
+}
+
+@media (max-width:410px){
+  #online .no-gutters{
+      padding: 0 20px;
+  }
+}
